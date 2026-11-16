@@ -1,50 +1,33 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Catálogo de Livros — Constituição do Projeto
 
-## Core Principles
+## Princípios fundamentais
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Escopo orientado ao usuário
+Cada entrega deve contribuir para consultar ou cadastrar livros no catálogo. Login, busca, edição, exclusão, capas e outros fluxos não fazem parte desta versão.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Contratos explícitos
+As fronteiras entre página, componentes e API devem ser documentadas. O recurso livro usa `id`, `titulo` e `autor`; falhas de HTTP ou de rede devem ser sinalizadas ao chamador.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Estados visíveis e recuperação
+A interface deve representar carregamento, lista vazia, sucesso e erro. Erros de consulta oferecem nova tentativa; erros de cadastro preservam os dados digitados.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Validação verificável
+Campos de título e autor não podem ser vazios ou conter apenas espaços. Cada critério da especificação deve ser conferido manualmente no fluxo integrado e registrado no checklist.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Simplicidade e revisão
+Usar a solução mínima compatível com o escopo: React com Vite, JavaScript, `fetch` e JSON Server. Artefatos e alterações relevantes devem ser revisados por uma pessoa do grupo antes da entrega.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Restrições técnicas
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+O frontend é uma aplicação React/Vite. O JSON Server local persiste os dados em `db.json` e expõe `GET /livros` e `POST /livros`. A entrega deve continuar funcional após `npm run build`.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Fluxo de qualidade
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Antes da entrega, revisar a especificação, o plano, as tarefas e o checklist; validar a persistência após recarregar; conferir os estados de erro; restaurar o `db.json`; e executar o build.
 
 ## Governance
 <!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Esta constituição orienta os artefatos e a implementação desta feature. Qualquer alteração de escopo deve ser registrada na especificação e revisada pelo grupo.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Versão**: 1.0.0 | **Ratificada**: 2026-11-16 | **Última alteração**: 2026-11-16
