@@ -9,10 +9,10 @@
 
 ## API e persistência
 
-- [ ] T003 Criar `db.json` com o recurso `livros` e um registro inicial.
-- [ ] T004 Adicionar JSON Server e o script `npm run api` em `package.json`, versionando `package-lock.json`.
-- [ ] T005 Implementar `src/api/livros.js` com `listarLivros` e `cadastrarLivro`, incluindo verificação de `response.ok`.
-- [ ] T006 Testar GET, POST e GET novamente e restaurar o `db.json` antes do commit.
+- [x] T003 Criar `db.json` com o recurso `livros` e um registro inicial.
+- [x] T004 Adicionar JSON Server e o script `npm run api` em `package.json`, versionando `package-lock.json`.
+- [x] T005 Implementar `src/api/livros.js` com `listarLivros` e `cadastrarLivro`, incluindo verificação de `response.ok`.
+- [x] T006 Testar GET, POST e GET novamente e restaurar o `db.json` antes do commit.
 
 ## Componentes
 
