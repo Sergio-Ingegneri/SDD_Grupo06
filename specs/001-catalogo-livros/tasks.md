@@ -9,15 +9,15 @@
 
 ## API e persistência
 
-- [x] T003 Criar `db.json` com o recurso `livros` e um registro inicial.
-- [x] T004 Adicionar JSON Server e o script `npm run api` em `package.json`, versionando `package-lock.json`.
-- [x] T005 Implementar `src/api/livros.js` com `listarLivros` e `cadastrarLivro`, incluindo verificação de `response.ok`.
-- [x] T006 Testar GET, POST e GET novamente e restaurar o `db.json` antes do commit.
+- [ ] T003 Criar `db.json` com o recurso `livros` e um registro inicial.
+- [ ] T004 Adicionar JSON Server e o script `npm run api` em `package.json`, versionando `package-lock.json`.
+- [ ] T005 Implementar `src/api/livros.js` com `listarLivros` e `cadastrarLivro`, incluindo verificação de `response.ok`.
+- [ ] T006 Testar GET, POST e GET novamente e restaurar o `db.json` antes do commit.
 
 ## Componentes
 
-- [ ] T007 [P] [US1] Criar `src/components/ListaLivros.jsx` com carregamento, erro, lista vazia, itens e nova tentativa.
-- [ ] T008 [P] [US2] Criar `src/components/FormularioLivro.jsx` com campos controlados, `trim`, validação, estado de envio e preservação em erro.
+ - [x] T007 [P] [US1] Criar `src/components/ListaLivros.jsx` com carregamento, erro, lista vazia, itens e nova tentativa. (implementado: commit ed4a067)
+ - [x] T008 [P] [US2] Criar `src/components/FormularioLivro.jsx` com campos controlados, `trim`, validação, estado de envio e preservação em erro. (implementado: commit 6a8cdf9)
 
 ## Integração
 
