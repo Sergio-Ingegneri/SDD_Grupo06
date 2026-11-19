@@ -15,7 +15,7 @@ export async function listarLivros() {
       throw new Error(`Falha ao listar livros: ${res.status} ${res.statusText}`);
     }
     return await res.json();
-  } catch (err) {
+  } catch {
     // Re-lançar como erro controlado para a UI tratar (ex: exibir botão "Tentar novamente")
     throw new Error('Falha ao listar livros: erro de rede ou servidor');
   }
@@ -32,7 +32,7 @@ export async function cadastrarLivro({ titulo, autor }) {
       throw new Error(`Falha ao cadastrar livro: ${res.status} ${res.statusText}`);
     }
     return await res.json();
-  } catch (err) {
+  } catch {
     throw new Error('Falha ao cadastrar livro: erro de rede ou servidor');
   }
 }

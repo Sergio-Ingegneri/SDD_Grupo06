@@ -2,12 +2,13 @@
 
 Projeto da atividade de SDD: página React para consultar e cadastrar livros usando uma API local persistida em `db.json`.
 
-**Status atual**: especificação e planejamento registrados; a implementação da tela e da API ainda está pendente.
+**Status atual**: implementação concluída e validada conforme `checklists/validacao.md`.
 
 ## Stack e execução
 
 - React + Vite + JavaScript
 - JSON Server para `GET /livros` e `POST /livros`
+- Linting com `oxlint`
 
 ```bash
 npm install
@@ -31,6 +32,7 @@ A integração do Spec Kit com o OpenCode está versionada em `.specify/` e `.op
 
 Inclui listagem, cadastro, persistência, validação de campos e tratamento de falhas. Login, busca, edição, exclusão e capas não fazem parte desta entrega.
 
-## Integrantes
+## Integrantes e Reflexão
 
-Preencher com os seis integrantes do grupo e seus respectivos responsáveis em `tasks.md` antes da entrega.
+- **Grupo 06**
+- **Reflexão**: O projeto permitiu aplicar na prática a integração de um frontend React com uma API REST simples utilizando o JSON Server. O desafio principal foi o gerenciamento do estado em cenários de falha na API, resolvido com a implementação de um mecanismo de `Tentar novamente` e preservação dos dados de formulário durante erros. Os testes de validação confirmaram a robustez da solução frente a cenários de indisponibilidade da API e entrada de dados inválidos.
