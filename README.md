@@ -9,11 +9,19 @@ Projeto da atividade de SDD: página React para consultar e cadastrar livros usa
 - React + Vite + JavaScript
 - JSON Server para `GET /livros` e `POST /livros`
 - Linting com `oxlint`
+- Build de produção com `vite build`
 
 ```bash
+# Instalação
 npm install
-npm run api   # terminal 1
-npm run dev   # terminal 2
+
+# Desenvolvimento
+npm run api   # terminal 1: Inicia a API
+npm run dev   # terminal 2: Inicia o frontend
+
+# Qualidade e Build
+npm run lint  # Executa o linter
+npm run build # Gera o build de produção (pasta /dist)
 ```
 
 ## Artefatos do Spec Kit

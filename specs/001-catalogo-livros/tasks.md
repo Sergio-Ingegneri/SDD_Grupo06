@@ -30,7 +30,7 @@
 - [X] T012 Executar os cenários de `checklists/validacao.md` com API e frontend ativos.
 - [X] T013 [P] Registrar resultado, correções e um caso adicional no checklist.
 - [X] T014 Restaurar dados iniciais, executar `npm run lint` e `npm run build`.
-- [] T015 Atualizar o README com execução, artefatos, integrantes e reflexão da entrega.
+- [X] T015 Atualizar o README com execução, artefatos, integrantes e reflexão da entrega.
 
 ## Dependências
 
